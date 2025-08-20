@@ -1,0 +1,301 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 20 14.3% 4.1%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 20 14.3% 4.1%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 20 14.3% 4.1%;
+
+      --primary: 24 9.8% 10%;
+      --primary-foreground: 60 9.1% 97.8%;
+
+      --secondary: 60 4.8% 95.9%;
+      --secondary-foreground: 24 9.8% 10%;
+
+      --muted: 60 4.8% 95.9%;
+      --muted-foreground: 25 5.3% 44.7%;
+
+      --accent: 60 4.8% 95.9%;
+      --accent-foreground: 24 9.8% 10%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 60 9.1% 97.8%;
+
+      --border: 20 5.9% 90%;
+      --input: 20 5.9% 90%;
+      --ring: 20 14.3% 4.1%;
+
+      --radius: 0.5rem;
+
+      --solvebackground: #F0F0F0;
+      --solveaccent: #FAFAFA;
+      --solvecard: #FFFFFF;
+      --solvetext: #000000;
+      --solvespan: #efefef;
+      --study-accent:#E8E8E8;
+    }
+  }
+
+.privacy-page  p{
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.privacy-page  h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+.privacy-page  h2{
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+    .dark {
+      --nextra-navbar-height: 44px;
+      --background: 20 14.3% 4.1%;
+      --foreground: 60 9.1% 97.8%;
+
+      --card: 20 14.3% 4.1%;
+      --card-foreground: 60 9.1% 97.8%;
+
+      --popover: 20 14.3% 4.1%;
+      --popover-foreground: 60 9.1% 97.8%;
+
+      --primary: 60 9.1% 97.8%;
+      --primary-foreground: 24 9.8% 10%;
+
+      --secondary: 12 6.5% 15.1%;
+      --secondary-foreground: 60 9.1% 97.8%;
+
+      --muted: 12 6.5% 15.1%;
+      --muted-foreground: 24 5.4% 63.9%;
+
+      --accent: 12 6.5% 15.1%;
+      --accent-foreground: 60 9.1% 97.8%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 60 9.1% 97.8%;
+
+      --border: 12 6.5% 15.1%;
+      --input: 12 6.5% 15.1%;
+      --ring: 24 5.7% 82.9%;
+
+      --solvebackground: #0F0F0F;
+      --solveaccent: #333333;
+      --solvecard: #262626;
+      --solvetext: #FFFFFF;
+      --solvespan: #404040;
+      --study-accent:#232323;
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+  
+  body{
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+
+
+  }
+  /*body {
+    background-image: radial-gradient(circle at 18px 15px, #ffffff77 2px, transparent 0);
+    background-size: 40px 40px;
+   
+  }*/
+  .cover{
+    margin: auto;
+    max-width: 55%;
+    
+  }
+  .color{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(12,10,9);
+    background: linear-gradient(90deg, rgba(12,10,9,0.6) 0%, rgba(12,10,9,1) 15%, rgba(12,10,9,1) 85%, rgba(12,10,9,0.6) 100%);
+    transform: translate(-50%, -50%);
+    z-index: -90000;
+  }
+
+  .sub-div{
+    font-size: 0.5rem
+  }
+  .iphone-bg{
+     
+    max-height: 750px;
+  }
+  @keyframes op-anim {
+    0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+  .beehiiv{
+  
+    border:none;
+    overflow:hidden;
+    margin: auto;
+    padding-bottom: 0rem;
+    height:100%;
+    min-width:50%;
+    max-width: 70%;
+  
+}
+
+.extra-mid{
+  justify-content: flex-end
+}
+.questionpanel{
+  height: 91svh;
+}
+
+.desc b{
+  font-weight: 600;
+}
+
+.desc span{
+ background-color: var(--solvespan);
+ border-radius: 0.25rem;
+ padding-left: 0.25rem/* 4px */;
+ padding-right: 0.25rem/* 4px */;
+ margin-left: 0.25rem;
+ font-family: monospace;
+}
+
+
+@media (max-height:1150px)  {
+  .questionpanel{
+    height: 90dvh;
+  }
+}
+@media (max-height:1000px)  {
+  .questionpanel{
+    height: 89dvh;
+  }
+}
+@media (max-height:890px)  {
+  .questionpanel{
+    height: 87dvh;
+  }
+}
+@media (max-height:750px)  {
+  .questionpanel{
+    height: 84dvh;
+  }
+}
+@media (max-height:600px)  {
+  .questionpanel{
+    height: 83dvh;
+  }
+}
+
+@media (max-width:430px)  {
+  .cover{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+  
+}
+@media (max-width:780px)  {
+  .cover{
+     max-width: 100%;
+  }
+ 
+}
+@media (max-width:1038px)  {
+  .cover{
+     max-width: 80%;
+  }
+}
+  
+@media (max-width:1320px)  {
+  .cover{
+     max-width: 75%;
+  }
+ 
+}
+@media (max-width:1820px)  {
+  .cover{
+     max-width: 70%;
+  }
+ 
+}
+
+.qlist :last-child{
+  border-bottom: none;
+}
+
+.desc ul{
+  margin-top:5px;
+  margin-left: 3rem;
+  list-style-type: disc;
+  font-family: monospace;
+}
+
+.nextra-nav-container{
+  max-height: 44px!important;
+}
+
+.studyplan-page{
+  font-size: 0.9rem;
+  h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom:0.5rem;
+  }
+  h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom:0.3  rem;
+  }
+  p{
+    font-size: 0.9rem/* 15px */;
+    line-height: 1.25rem/* 20px */;
+  }
+  .code-block{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  ul{
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  li{
+    padding: 5px 0 ;
+  }
+  pre{
+    background-color: var(--study-accent);
+    border-radius: 5px;
+    padding: 2px 12px;
+  }
+  code{
+    background-color: var(--study-accent);
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+
+}
